@@ -1,0 +1,23 @@
+<div class="card">
+    <form ngNativeValidate [formGroup]="formularioGrupo"    (ngSubmit)="enviardatos()">
+        <div class="card-header">
+            Agregar Empleado
+        </div>
+        <div class="card-body">
+                <div class="form-group">
+                    <label for="">Nombre del Empleado</label>
+                    <input required type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" placeholder="nombre">
+                </div>
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-md-6">
+                <!--  <button type="submit" class="btn btn-success">Guardar</button> -->
+                </div>
+                <div class="col-md-6">
+                    <a class="dropdown-item" routerLink="/listar" href="#">Cancelar</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,27 @@
+<div class="card">
+    <form  [formGroup]="formularioGrupo"    (ngSubmit)="enviardatos()">
+        <div class="card-header">
+            Editar el Empleado
+        </div>
+        <div class="card-body">
+                <div class="form-group">
+                    <label for="">ID</label>
+                    <input type="text" class="form-control" formControlName="id"  name="id" id="id" placeholder="codigo" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="">nombre</label>
+                    <input type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" placeholder="nombre">
+                </div>
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-md-6">
+                   <!-- <button type="submit" class="btn btn-success">Guardar</button> -->
+                </div>
+                <div class="col-md-6">
+                    <a class="dropdown-item" routerLink="/listar" href="#">Cancelar</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
